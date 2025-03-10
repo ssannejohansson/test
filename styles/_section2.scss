@@ -6,6 +6,41 @@
     height: 100%;
 }
 
+.second-section-card {
+    max-width: 543px;
+    width: 100%;
+    min-height: 374px;
+    height: 100%; 
+    background-color: #232323;
+    opacity: 90%;
+
+    &__top {
+        font-family: fonts.$head-font;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 26px; 
+        letter-spacing: 1.5px;
+        color: fonts.$main-info-color;
+
+    }
+
+    &__title {
+        font-family: fonts.$head-font;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+
+    &__info {
+        font-family: fonts.$head-font;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 26px;
+        color: fonts.$main-info-color;
+    }
+}
+
 
 
 .second-section__second {
@@ -13,3 +48,4 @@
     min-height: 700px;
     height: 100%; 
 }
+
