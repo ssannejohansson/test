@@ -2,21 +2,29 @@
 
 .second-section-first {
     background-image: url(../images/sec2-background1.png); 
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: cover; 
     min-height: 700px;
     height: 100%;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
 .second-section {
+    position: relative;
 
-
-    &__card {
+    &__card1 {
+    position: absolute; 
+    left: 328px;
+    top: 227px;
     padding-left: 23px;
     max-width: 543px;
     width: 100%;
-    min-height: 374px;
-    height: 100%; 
-    background-color: #232323;
-    opacity: 90%;
+    height: 374px;
+    background-color: #232323c8;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly
@@ -50,9 +58,29 @@
 
 .second-section-second {
     background-image: url(../images/sec2-background2.png);
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: cover; 
     min-height: 700px;
     height: 100%; 
-}
+    position: relative;
+
+    &__card {
+        position: absolute; 
+        left: 900px;
+        top: 229px;
+        padding-left: 23px;
+        max-width: 543px;
+        width: 100%;
+        height: 374px;
+        background-color: #232323c8;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly
+        }
+    }
+
+
 
 .second-section-button {
     background-color: #5474FD;

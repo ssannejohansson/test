@@ -3,10 +3,13 @@
 .first-section {
     margin: 0;
     background-image: url(../images/sec1-background.png);
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: cover; 
     min-height: 685px;
     height: 100%; 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     
     &__left {
@@ -52,35 +55,43 @@
 }
 
 .wrapper {
-    width: 560px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 420px; 
+
 }
 
-.sec1-img1, .sec1-img2 {
+.sec1-img1 {
     max-width: 350px;
     width: 100%;
     min-height: 220px;
     height: 100%; 
+    float: left;
+    margin-bottom: 10px;
+}
+
+.sec1-img2 {
+    max-width: 350px;
+    width: 100%;
+    min-height: 220px;
+    height: 100%; 
+    float: right;
 }
 
 
-.bottom-container {
-        width: 100%;
-        min-height: 340px;
-        height: 100%;
-        background-color: #333333;   
-        display: flex;
-        flex-direction: row; 
-        justify-content: space-around;
-        align-items: center;
 
-        &__text {
-            font-family: fonts.$main-font;
-            font-size: 36px; 
-            font-weight: normal;
-            line-height: 26px;
-            color: fonts.$main-info-color;
-        }
+.bottom-container {
+    width: 100%;
+    min-height: 340px;
+    height: 100%;
+    background-color: #333333;   
+    display: flex;
+    flex-direction: row; 
+    
+
+    &__text {
+        font-family: fonts.$main-font;
+        font-size: 36px; 
+        font-weight: normal;
+        line-height: 26px;
+        color: fonts.$main-info-color;
     }
+}    

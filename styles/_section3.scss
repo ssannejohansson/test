@@ -2,6 +2,9 @@
 
 .third-section {
     background-image: url(../images/sec3-background.png);
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: cover; 
     min-height: 731px;
     height: 100%;
     display: flex;
