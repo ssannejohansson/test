@@ -1,10 +1,12 @@
 @use 'fonts';
 
 .first-section {
+    margin: 0;
     background-image: url(../images/sec1-background.png);
     min-height: 685px;
     height: 100%; 
     display: flex;
+    justify-content: center;
     align-items: center;
     
     &__left {
@@ -30,6 +32,41 @@
         margin-bottom: 45px;
     }
 }
+
+.first-section__button {
+    width: 228px;
+    height: 63px;
+    background-color: #496BFE;
+    font-family: fonts.$main-font; 
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    letter-spacing: 1.2px; 
+    text-transform: uppercase; 
+    border: none; 
+    color: fonts.$main-txt-color;
+}
+
+.first-section__button:hover {
+    background-color: #17204a;
+}
+
+.wrapper {
+    width: 560px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec1-img1, .sec1-img2 {
+    max-width: 350px;
+    width: 100%;
+    min-height: 220px;
+    height: 100%; 
+}
+
+
+
 
 .first-section__bottom-container {
         width: 100%;

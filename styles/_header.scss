@@ -2,7 +2,7 @@
 
 .header {
     background-image: url(../images/header-background.png);
-    min-height: 740px;
+    min-height: 820px;
     height: 100%; 
     display: flex;
     flex-direction: column;
@@ -76,6 +76,7 @@ input {
 
 .search__button:hover {
     background-color: #17204a;
+    cursor: pointer;
 }
 
 .fa-magnifying-glass {
