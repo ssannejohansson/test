@@ -1,0 +1,15 @@
+@use 'fonts';
+
+.second-section__first {
+    background-image: url(../images/sec2-background1.png); 
+    min-height: 700px;
+    height: 100%;
+}
+
+
+
+.second-section__second {
+    background-image: url(../images/sec2-background2.png);
+    min-height: 700px;
+    height: 100%; 
+}
