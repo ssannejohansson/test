@@ -28,6 +28,59 @@
     }
 }
 
+form {
+    background-color: #fff;
+    max-width: 653px; 
+    width: 100%;
+    min-height: 60px;
+    height: 100%; 
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+}
+
+input {
+    all: unset; 
+    width: 500px;  
+    font-family: fonts.$head-font;
+    font-weight: normal;
+    font-size: 14px; 
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    text-align: center;
+}
+
+::placeholder {
+    color: #999999;
+    opacity: 0.7px; 
+}
+
+.search__button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    min-height: 60px;
+    height: 100%; 
+    background-color: #5474FD;
+    font-style: fonts.$main-font; 
+    font-size: 14px;
+    line-height: 26px; 
+    letter-spacing: 1.4px; 
+    text-transform: uppercase; 
+    color: fonts.$main-txt-color; 
+}
+
+.search__button:hover {
+    background-color: #17204a;
+}
+
+.fa-magnifying-glass {
+    font-size: 22px; 
+    margin-left: 8px; 
+}
+
 .scroll {
     font-family: fonts.$head-font;
     font-size: 14px;
