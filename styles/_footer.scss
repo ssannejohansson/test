@@ -38,10 +38,13 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-}
+} 
 
 .fa-linkedin-in {
     color: #5474FD;
+}
 
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-linkedin-in:hover, .fa-youtube:hover, .fa-pinterest:hover {
+  transform: scale(1.5);   
 }
 
