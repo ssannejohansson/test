@@ -1,7 +1,9 @@
+@use 'fonts';
+
 body {
     height: 100vh;
     background-color: #fff;
-    margin: 14px; 
+    color: fonts.$main-txt-color;
 }
 
 @import 'header'; 
