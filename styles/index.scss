@@ -1,9 +1,11 @@
 @use 'fonts';
 
 body {
+    margin: auto;
     height: 100vh;
     background-color: #fff;
     color: fonts.$main-txt-color;
 }
 
 @import 'header'; 
+@import 'section1';

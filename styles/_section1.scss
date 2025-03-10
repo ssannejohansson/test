@@ -1,0 +1,39 @@
+@use 'fonts';
+
+.first-section {
+    background-image: url(../images/sec1-background.png);
+    min-height: 685px;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    
+    &__left {
+        max-width: 560px;
+        width: 100%;
+    }
+
+    &__title {
+        font-family: fonts.$main-font;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 26px;
+        margin-bottom: 46px;
+    }
+
+    &__info {
+        font-family: fonts.$head-font;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px; 
+        letter-spacing: 1.6px; 
+        color: fonts.$main-info-color;
+        margin-bottom: 45px;
+    }
+}
+
+.first-section__bottom-container {
+        width: 100%;
+        min-height: 340px;
+        height: 100%;
+        background-color: #333333;
+}
