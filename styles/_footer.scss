@@ -1,13 +1,29 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @use 'fonts';
 
 .footer {
     min-height: 218px;
     height: 100%; 
     background-color: #232323;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center; 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
     padding-bottom: 53px; 
 
     &__logo {
@@ -36,8 +52,12 @@
 .footer__icons {
     max-width: 166px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 } 
 
 .fa-linkedin-in {
@@ -45,6 +65,7 @@
 }
 
 .fa-facebook-f:hover, .fa-twitter:hover, .fa-linkedin-in:hover, .fa-youtube:hover, .fa-pinterest:hover {
-  transform: scale(1.5);   
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);   
 }
-

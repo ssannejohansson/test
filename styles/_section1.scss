@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @use 'fonts';
 
 .first-section {
@@ -8,9 +15,15 @@
     background-size: cover; 
     min-height: 685px;
     height: 100%; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
     &__left {
         max-width: 560px;
@@ -76,24 +89,34 @@
     float: right;
 }
 
-
-
 .bottom-container {
     width: 100%;
     min-height: 340px;
     height: 100%;
     background-color: #333333;   
+    display: -webkit-box;   
+    display: -ms-flexbox;   
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     &__1, &__2, &__3 {
         width: 350px;
         height: 160px; 
+        display: -webkit-box; 
+        display: -ms-flexbox; 
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     &__text {

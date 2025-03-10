@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @use 'fonts';
 
 .second-section-first {
@@ -7,10 +14,15 @@
     background-size: cover; 
     min-height: 700px;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
-    justify-content: flex-start;
-    align-items: center;
-
+    -webkit-box-pack: start; 
+        -ms-flex-pack: start; 
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .second-section {
@@ -25,9 +37,16 @@
     width: 100%;
     height: 374px;
     background-color: #232323c8;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly
     }
 
     &__top {
@@ -74,13 +93,18 @@
         width: 100%;
         height: 374px;
         background-color: #232323c8;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly
         }
     }
-
-
 
 .second-section-button {
     background-color: #5474FD;
@@ -101,4 +125,3 @@
 .second-section-button:hover {
     background-color: #17204a;
 }
-
