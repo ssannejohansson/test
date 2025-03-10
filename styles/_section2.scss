@@ -1,18 +1,26 @@
 @use 'fonts';
 
-.second-section__first {
+.second-section-first {
     background-image: url(../images/sec2-background1.png); 
     min-height: 700px;
     height: 100%;
 }
 
-.second-section-card {
+.second-section {
+
+
+    &__card {
+    padding-left: 23px;
     max-width: 543px;
     width: 100%;
     min-height: 374px;
     height: 100%; 
     background-color: #232323;
     opacity: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+    }
 
     &__top {
         font-family: fonts.$head-font;
@@ -21,7 +29,6 @@
         line-height: 26px; 
         letter-spacing: 1.5px;
         color: fonts.$main-info-color;
-
     }
 
     &__title {
@@ -41,9 +48,25 @@
     }
 }
 
-.second-section__second {
+.second-section-second {
     background-image: url(../images/sec2-background2.png);
     min-height: 700px;
     height: 100%; 
+}
+
+.second-section-button {
+    background-color: #5474FD;
+    opacity: 100%;
+    width: 228px;
+    height: 63px;
+    font-family: fonts.$main-font;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: fonts.$main-txt-color;
+    border: none; 
+    text-align: center;
 }
 
