@@ -128,7 +128,12 @@ input {
         font-weight: normal;
         line-height: 28px;
         letter-spacing: 2.8px;
+        text-decoration: none;
     }
+
+        & a {
+            text-decoration: none;
+        }
     
     &__icon {
         text-align: center; 
