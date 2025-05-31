@@ -1,8 +1,11 @@
 @use 'fonts';
 
 body {
-    height: 100vh;
+    margin: auto; 
+    max-width: 1800px;
+    width: 100%;
     color: fonts.$main-txt-color;
+   
 }
 
 @import 'header'; 
